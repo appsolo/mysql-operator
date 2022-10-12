@@ -38,7 +38,6 @@ The following table contains the configuration parameters for mysql-operator and
 | `podDisruptionBudget.enabled`   | Specifies whether a PodDisruptionBudget for the MySQL operator StatefulSet should be created. <br /> _NOTE_ it only takes effect if `replicaCount` is greated than 1. | `true` |
 | `podDisruptionBudget.minAvailable`   | ref: https://kubernetes.io/docs/tasks/run-application/configure-pdb/#specifying-a-poddisruptionbudget | `empty` |
 | `podDisruptionBudget.maxUnavailable` | ref: https://kubernetes.io/docs/tasks/run-application/configure-pdb/#specifying-a-poddisruptionbudget | `1`     |
-| `podSecurityPolicy.enabled`     | Specified whether a PodSecurityPolicy should be created. PSP are deprecated and this will be removed in the future | `false` |
 | `nodeSelector`                  | MySQL Operator pod nodeSelector                                                               | `{}`                                                    |
 | `tolerations`                   | MySQL Operator pod tolerations                                                                | `[]`                                                    |
 | `affinity`                      | MySQL Operator pod affinity                                                                   | `{}`                                                    |
